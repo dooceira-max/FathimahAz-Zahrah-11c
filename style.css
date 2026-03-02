@@ -73,8 +73,6 @@ li {
     margin: auto;
     padding: 20px;
     background-color: #fdfdfd;
-    font-family: 'Georgia', serif;
-
     line-height: 1.8;
 }
 .artikel .penulis {
@@ -177,3 +175,4 @@ form button:hover {
 .contact-item a:hover {
     color: #b08968;
 }
+
