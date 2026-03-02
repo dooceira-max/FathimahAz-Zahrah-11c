@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prfil Usaha Buku</title>
+    <link rel="stylesheet" href="style.css" />
 
+</head>
+<body>
+    <header> 
+        <img src="ChatGPT Image Feb 2, 2026, 10_52_00 AM.png" alt="header" width="1313" height="320">
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="bedah-buku.html">Bedah Buku</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="event.html">Event</a>
+        
+    </nav>
+    <div class="container">
+  <h1>📚 Pameran Buku 2026</h1>
+
+  <div class="book">
+    <input type="checkbox" value="75000"> Novel - Rp75.000
+  </div>
+  <div class="book">
+    <input type="checkbox" value="120000"> Buku Motivasi - Rp120.000
+  </div>
+  <div class="book">
+    <input type="checkbox" value="95000"> Buku Islami - Rp95.000
+  </div>
+
+  <br>
+  <input type="text" id="kodePromo" placeholder="Masukkan Kode Diskon">
+  <br>
+  <button onclick="hitungTotal()">Hitung Total</button>
+
+  <div class="total" id="hasil"></div>
+</div>
+
+<script>
+  function hitungTotal() {
+    let total = 0;
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    checkboxes.forEach(function(item) {
+      total += parseInt(item.value);
+    });
+
+    let kode = document.getElementById("kodePromo").value;
+    let diskon = 0;
+
+    if (kode === "HEMAT10") {
+      diskon = total * 0.10;
+    } else if (kode === "PELAJAR20") {
+      diskon = total * 0.20;
+    }
+
+    let totalAkhir = total - diskon;
+
+    document.getElementById("hasil").innerHTML =
+      "Total: Rp" + total.toLocaleString() +
+      "<br>Diskon: Rp" + diskon.toLocaleString() +
+      "<br>Total Bayar: Rp" + totalAkhir.toLocaleString();
+  }
+</script>
+
+</body>
+</html>
