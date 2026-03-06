@@ -1,19 +1,63 @@
-body { 
-    background-color: #efd9d9;
-    font-family: 'Libre Baskerville';
-    color: #9b8f8f;
-    margin: 20px;
-    }
-h1 { 
-    color: #839e67;
-    text-align: center;
-    }
-h2 {
-    color: #745264;
-    text-align: center;
-    margin-bottom: 30px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+    line-height:1.6;
 }
 
+header img{
+    width:100%;
+    height:auto;
+}
+
+nav{
+    background:#3a3a3a;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd369;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+h2{
+    color:#444;
+}
+
+.kategori-buku{
+    padding-left:20px;
+}
+
+.deskripsi p{
+    text-align:justify;
+}
+
+footer{
+    text-align:center;
+    background:#3a3a3a;
+    color:white;
+    padding:10px;
+    margin-top:30px;
+}
 p {
     font-size: 20px;
     text-align: left;
@@ -203,3 +247,4 @@ form button:hover {
       font-weight: bold;
       margin-top: 15px;
     }
+
